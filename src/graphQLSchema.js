@@ -40,17 +40,18 @@ const mergedTypeDefs = mergeSchemas(
 		studentsTypeDef,
 		coursesTypeDef,
 		gradesTypeDef,
-		authTypeDef
+		authTypeDef,
 	],
 	[
 		studentsQueries,
 		coursesQueries,
-		gradesQueries
+		gradesQueries,
 	],
 	[
 		studentsMutations,
 		coursesMutations,
-		gradesMutations
+		gradesMutations,
+		authMutations,
 	]
 );
 
@@ -62,6 +63,6 @@ export default makeExecutableSchema({
 		studentsResolvers,
 		coursesResolvers,
 		gradesResolvers,
-		authResolvers
+		authResolvers,
 	)
 });
